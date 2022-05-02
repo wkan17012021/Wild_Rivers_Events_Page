@@ -5,9 +5,14 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif, Roboto;
-    
+    font-size: 100%;
 }
 
 *::before, *::after {
     box-sizing: inherit;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
 }
