@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./dist/globals.css" />
-    <link rel="stylesheet" href="./dist/components/nav_header.css" />
+    <link rel="stylesheet" href="./scss/dist/styles.css" />
     <title>Wild Rivers Events Page</title>
   </head>
   <body>
@@ -16,7 +15,7 @@
       />
     </video> -->
     <!-- Header nav -->
-    <header class="header-container bg-indigo-600">
+    <header class="header-container">
       <nav
         class="nav-bar max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
         aria-label="Top"
@@ -28,7 +27,8 @@
             <h1>Wild Rivers Events Page</h1>
             <div class="hidden ml-10 space-x-8 lg:block">
               <a
-                href="#"
+                href="https://en-gb.facebook.com/wildriversband"
+                target="_blank"
                 class="text-base font-medium text-white hover:text-indigo-50"
               >
                 <img
@@ -36,7 +36,8 @@
                   alt="Facebook Icon"
               /></a>
               <a
-                href="#"
+                href="https://www.instagram.com/wildriversmusic/?hl=en"
+                target="_blank"
                 class="text-base font-medium text-white hover:text-indigo-50"
               >
                 <img
@@ -44,7 +45,8 @@
                   alt="Instagram Icon"
               /></a>
               <a
-                href="#"
+                href="https://open.spotify.com/artist/59sBwR0jPSTrbMtuTkRPN5"
+                target="_blank"
                 class="text-base font-medium text-white hover:text-indigo-50"
               >
                 <img
@@ -52,7 +54,8 @@
                   alt="Spotify Icon"
               /></a>
               <a
-                href="#"
+                href="https://twitter.com/wildrivers?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                target="_blank"
                 class="text-base font-medium text-white hover:text-indigo-50"
               >
                 <img
@@ -70,9 +73,13 @@
             </div>
           </div>
         </div>
-        <div class="py-4 flex flex-wrap justify-center space-x-6 lg:hidden">
+        <div
+          style="display: none"
+          class="py-4 flex flex-wrap justify-center space-x-6 lg:hidden"
+        >
           <a
-            href="#"
+            href="https://www.youtube.com/channel/UCHMv73m6MWxJqgqYoAXRr2A"
+            target="_blank"
             class="text-base font-medium text-white hover:text-indigo-50"
           >
             <img
@@ -164,15 +171,21 @@
       >
     </p>
     <div class="img-gallery">
-      <img src="https://musictalkers.com/images/joomgallery/details/dev.jpg" />
+      <img
+        src="https://musictalkers.com/images/joomgallery/details/dev.jpg"
+        alt="Wild Rivers band members staring up into the camera from the seats of a topdown car"
+      />
       <img
         src="https://pbs.twimg.com/media/FMIcZeIWYAUhMX5?format=jpg&name=large"
+        alt="Wild Rivers band members performing live"
       />
       <img
         src="https://i.scdn.co/image/ab67616d0000b273d9be0c15abb6ce0c16f265ad"
+        alt="Wild Rivers cover album"
       />
       <img
         src="https://e.snmc.io/i/600/s/667544bed4f4e18f0b1b821ecbb2e380/9298439/wild-rivers-sidelines-cover-art.jpg"
+        alt="Wild Rivers Sidelines cover album"
       />
       <iframe
         width="560"
