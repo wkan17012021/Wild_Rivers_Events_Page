@@ -34,18 +34,48 @@ body {
   color: #020B14;
 }
 
-.nav-title h1 {
-  font-size: 4rem;
+.nav-bar {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 4rem;
 }
 
-.nav-title {
-  display: flex;
-  flex-direction: column;
+.inner-nav {
+  width: 100%;
+  padding: 0 6rem;
+}
+
+.nav-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
+}
+
+.nav-wrapper h1 {
+  font-size: 3rem;
+}
+
+.icon-wrapper {
+  margin: 0 0 0 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+/*  Icons to display on small - med screens */
+.icon-small-screen {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  margin-left: 1.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

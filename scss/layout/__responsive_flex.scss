@@ -1,9 +1,17 @@
 @use './_breakpoints';
 
-@mixin flex-mob {
+@mixin flex-mob-col {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
+}
+
+@mixin flex-mob-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
 }
