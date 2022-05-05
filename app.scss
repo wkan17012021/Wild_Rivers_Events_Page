@@ -1,6 +1,0 @@
-@use "globals";
-@use "./globals/_reset";
-
-h1 {
-    color: globals.$main-font-color;
-}
