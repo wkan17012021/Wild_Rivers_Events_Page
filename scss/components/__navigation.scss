@@ -33,12 +33,9 @@
 .icon-small-screen {
     display: none;
     padding: 0 2rem;
+    margin-bottom: 1rem;
     flex-wrap: wrap;
     gap: 5px;
-}
-
-.nav-wrapper h1, .icon-small-screen {
-    margin-bottom: 1rem;
 }
 
 /* When screen is < 375px, hide icon-wrapper and show icon-small-screen. Otherwise, do the reverse. */
