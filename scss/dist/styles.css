@@ -85,12 +85,9 @@ body {
 .icon-small-screen {
   display: none;
   padding: 0 2rem;
+  margin-bottom: 1rem;
   flex-wrap: wrap;
   gap: 5px;
-}
-
-.nav-wrapper h1, .icon-small-screen {
-  margin-bottom: 1rem;
 }
 
 /* When screen is < 375px, hide icon-wrapper and show icon-small-screen. Otherwise, do the reverse. */
@@ -105,6 +102,29 @@ body {
     justify-content: center;
     align-items: center;
   }
+}
+.hero-wrapper, .hero-img {
+  position: relative;
+}
+
+.welcome-text {
+  position: absolute;
+  top: 12%;
+  left: 5%;
+  color: aliceblue;
+  font-size: 3vw;
+  width: 30%;
+}
+
+@media (max-width: 375px) {
+  .welcome-text {
+    visibility: hidden;
+  }
+}
+.hero-wrapper:hover {
+  transform: scale(1.02);
+  transition: transform 0.4s;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.24), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*# sourceMappingURL=styles.css.map */
