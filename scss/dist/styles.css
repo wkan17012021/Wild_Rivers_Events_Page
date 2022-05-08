@@ -41,8 +41,14 @@ picture {
   display: block;
 }
 
+ul {
+  list-style: none;
+  padding-left: 0;
+  font-weight: 600;
+}
+
 body {
-  background-color: #BBADFF;
+  background-image: linear-gradient(to bottom right, #8E94F2, #BBADFF, #DAB6FC);
   color: #020B14;
 }
 
@@ -125,6 +131,10 @@ body {
   transform: scale(1.02);
   transition: transform 0.4s;
   box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.24), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.events-title {
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

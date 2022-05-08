@@ -7,6 +7,6 @@ $bkgnd-lt-pink: #DAB6FC;
 $main-font-color: #020B14;
 
 body {
-    background-color: $bkgnd-lt-lilac;
+    background-image: linear-gradient(to bottom right, $bkgnd-lilac, $bkgnd-lt-lilac, $bkgnd-lt-pink);
     color: #020B14;
 }
