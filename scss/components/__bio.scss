@@ -1,0 +1,46 @@
+@use "../layout/_breakpoints" as bp;
+@use "../layout/_responsive_flex" as 💪🏽;
+
+.bio-container {
+    @include bp.mobile {
+        text-align: center;
+        @include 💪🏽.flex-mob-col;
+    }
+}
+
+.bio-container {
+    @include bp.tablet {
+        text-align: center;
+        @include 💪🏽.flex-mob-col;
+    }
+}
+
+.bio-text-wrapper {
+    @include bp.desktop {
+        @include 💪🏽.flex-mob-row;
+        align-items:flex-start;
+        gap: 1rem;
+    }
+}
+
+.left-wrapper {
+    @include bp.desktop {
+        width: 40%;
+        padding: 1rem;
+    }
+}
+
+.right-wrapper {
+    @include bp.desktop {
+        width: 40%;
+        padding: 1rem;
+    }
+}
+
+.stats {
+    font-size: 1.2rem;
+}
+
+.stats li {
+    margin-bottom: 1rem;
+}

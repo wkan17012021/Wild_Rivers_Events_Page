@@ -1,12 +1,13 @@
-//  700px (700 / 16px), 900px, 1440px
-$breakpoints-up: (
-    "medium": 43.75em,
-    "large": 56.25em,
-    "x-large": 90em,
-);
-
-@mixin breakpoint($size) {
-    @media (min-width: map-get($breakpoints-up, $size)) {
-        @content;
-    }
-}
+/* max-width 375px- set style when viewport is <= 375px */
+@mixin mobile {
+    @media (max-width: 375px) { @content; }
+  }
+  @mixin tablet {
+    @media (min-width: 700px) { @content; }
+  }
+  @mixin desktop {
+    @media (min-width: 1440px) { @content; }
+  }
+  @mixin xl-desktop {
+    @media (min-width: 1800px) { @content; }
+  }
