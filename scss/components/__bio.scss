@@ -1,6 +1,10 @@
 @use "../layout/_breakpoints" as bp;
 @use "../layout/_responsive_flex" as 💪🏽;
 
+.bio-container h2 {
+    margin-bottom: 1rem;
+}
+
 .bio-container {
     @include bp.mobile {
         text-align: center;

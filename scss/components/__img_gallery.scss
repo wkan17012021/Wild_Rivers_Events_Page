@@ -1,0 +1,36 @@
+@use '../helpers/_modifiers' as mod;
+@use "../layout/_breakpoints" as bp;
+@use "../layout/_responsive_flex" as 💪🏽;
+
+.img-gallery img {
+    margin: 0 auto 1rem;
+    border-radius: mod.$rounded-edges;
+}
+
+.img-gallery img:hover {
+    transition: transform .2s ease-in-out;
+    transform: translateY(-5px);
+}
+
+.img-gallery {
+    @include bp.mobile {
+        @include 💪🏽.flex-mob-col;
+    }
+    @include bp.tablet {
+        @include 💪🏽.flex-mob-row; 
+        flex-wrap: wrap;
+    }
+    @include bp.desktop {
+        // display: grid;
+    }
+}
+
+.img-gallery img {
+    @include bp.mobile {
+        max-width: 300px;
+        height: auto;
+    }
+    @include bp.tablet {
+        max-width: 270px;
+    }
+}
