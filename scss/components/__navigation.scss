@@ -1,7 +1,14 @@
-@import "../layout/_responsive_flex";
+@use '../helpers/_colors' as color;
+@use "../layout/_responsive_flex" as 💪🏽;
+
 
 .header-container {
     max-width: 100vw;
+    margin: 1rem 0;
+    position: sticky;
+    top: 0; 
+    z-index: 50;
+    background-image: linear-gradient(to left, color.$bkgnd-lilac, color.$bkgnd-lt-lilac, color.$bkgnd-lt-pink);
 }
 
 .nav-bar {
@@ -14,7 +21,7 @@
 }
 
 .nav-wrapper {
-    @include flex-mob-row;
+    @include 💪🏽.flex-mob-row;
 }
 
 .nav-wrapper h1 {
@@ -24,7 +31,7 @@
 
 .icon-wrapper {
     margin: 0 0 0 2rem;
-    @include flex-mob-row;
+    @include 💪🏽.flex-mob-row;
     flex-shrink: 1;
     gap: 5px;
 }
@@ -45,6 +52,6 @@
         display: none;
     }
     .icon-small-screen {
-       @include flex-mob-row;
+       @include 💪🏽.flex-mob-row;
     }
 }
