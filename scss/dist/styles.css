@@ -237,4 +237,9 @@ body {
   }
 }
 
+.music-tracks iframe {
+  margin: 0 auto 1rem;
+  border-radius: 1rem;
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,11 @@
+@use '../helpers/_modifiers' as mod;
+// @use "../layout/_breakpoints" as bp;
+// @use "../layout/_responsive_flex" as 💪🏽;
+
+.music-tracks iframe {
+    margin: 0 auto 1rem;
+    border-radius: mod.$rounded-edges;
+
+}
+
+// set widdth to 100% except for larger tabelt desktop screens. maybe height can remain at 80.
