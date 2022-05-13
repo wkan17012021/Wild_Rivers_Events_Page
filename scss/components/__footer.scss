@@ -1,0 +1,10 @@
+@use "../layout/_breakpoints" as bp;
+
+footer {
+    width: 100%;
+    margin: 1rem auto;
+}
+
+footer p {
+    text-align: center;
+}

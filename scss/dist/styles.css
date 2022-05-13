@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;800&display=swap");
 html {
   box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
 }
 
 * {
@@ -12,9 +13,14 @@ html {
 }
 
 body {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+main {
   padding: 5vh 10vw 0 10vw;
   margin: 0 auto;
-  font-family: "Raleway", sans-serif;
   font-size: 100%;
   max-width: 1440px;
 }
@@ -240,6 +246,15 @@ body {
 .music-tracks iframe {
   margin: 0 auto 1rem;
   border-radius: 1rem;
+}
+
+footer {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+footer p {
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
