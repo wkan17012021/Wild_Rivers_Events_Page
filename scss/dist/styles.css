@@ -20,7 +20,7 @@ body {
 
 main {
   padding: 5vh 10vw 0 10vw;
-  margin: 0;
+  margin: 0 0 1rem 0;
   font-size: 100%;
   max-width: 1440px;
 }
@@ -256,10 +256,24 @@ body {
 footer {
   width: 100%;
   margin: 1rem auto;
+  padding: 1rem 0;
+  background-image: linear-gradient(to left, #8E94F2, #BBADFF, #DAB6FC);
 }
 
 footer p {
   text-align: center;
+  margin: 1rem auto;
+}
+
+@media (min-width: 700px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

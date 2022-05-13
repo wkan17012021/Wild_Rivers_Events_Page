@@ -1,10 +1,23 @@
+@use '../helpers/_colors' as color;
 @use "../layout/_breakpoints" as bp;
+@use "../layout/_responsive_flex" as 💪🏽;
 
 footer {
     width: 100%;
     margin: 1rem auto;
+    padding: 1rem 0;
+    background-image: linear-gradient(to left, color.$bkgnd-lilac, color.$bkgnd-lt-lilac, color.$bkgnd-lt-pink);
 }
 
 footer p {
     text-align: center;
+    margin: 1rem auto;
+}
+
+footer {
+    @include bp.tablet {
+        @include 💪🏽.flex-mob-row; 
+        justify-content: space-around;
+        margin: 0 auto;
+    }
 }
